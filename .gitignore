@@ -1,0 +1,23 @@
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- .NET (Kompilacja i tymczasowe) ---
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# --- Baza danych (SQLite) ---
+bartender.db
+bartender.db-shm
+bartender.db-wal
+
+# --- Visual Studio / VS Code ---
+.vscode/
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
