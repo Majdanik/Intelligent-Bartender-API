@@ -1,6 +1,20 @@
 @Barman_HostAddress = http://localhost:5151
 
-GET {{Barman_HostAddress}}/weatherforecast/
+### Test otwartego endpointu (Zewnętrzne API - Nie wymaga klucza)
+GET {{Barman_HostAddress}}/api/explore/cocktails/margarita
 Accept: application/json
 
-###
+### Test pobrania stanu barku (Wymaga klucza!)
+GET {{Barman_HostAddress}}/api/inventory
+Accept: application/json
+X-Api-Key: haslo123
+
+### Test dodania składnika do barku (Wymaga klucza!)
+POST {{Barman_HostAddress}}/api/inventory
+Accept: application/json
+Content-Type: application/json
+X-Api-Key: haslo123
+
+{
+  "name": "Martini"
+}
