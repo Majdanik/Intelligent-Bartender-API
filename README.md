@@ -54,7 +54,7 @@ Aby móc testować API za pomocą narzędzi takich jak wbudowany plik `.http`, T
 
 **Wymagany nagłówek:**
 * **Klucz (Key):** `X-Api-Key`
-* **Wartość (Value):** *Wartość klucza znajduje się w pliku `appsettings.json` (lub `appsettings.Development.json`) pod właściwością "X-Api-Key".*
+* **Wartość (Value):** *Wartość klucza znajduje się w pliku `appsettings.json` pod właściwością "X-Api-Key".*
 
 *(W środowisku produkcyjnym klucz ten jest izolowany od kodu źródłowego i przechowywany jako zmienna środowiskowa).*
 
